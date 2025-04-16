@@ -1,0 +1,2 @@
+class LargeDistanceException(Exception):
+    pass
