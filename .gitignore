@@ -25,7 +25,10 @@ build/
 # Snyk
 .snyk
 .snyk-db
+snyk.exe
 
 # Misc
 .DS_Store
 *.log 
+*.dccache 
+*.gitignore
