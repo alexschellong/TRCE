@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException, Query
 from typing import Annotated
 from .TRCEFunctions import *
 from .TRCESchemas import TRCERequest
+from .TRCEExceptions import LargeDistanceException
 import asyncio
 from geopy import distance
 
@@ -68,7 +69,4 @@ async def get_transportation_request_cost(
     except:
         raise HTTPException(status_code=500) 
 
-
-class LargeDistanceException(Exception):
-    pass
 
