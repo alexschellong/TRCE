@@ -11,7 +11,7 @@ root_url = 'https://apiapi.free.beeceptor.com/api/v1/locations'
 TRCE_router = APIRouter()
 
 # Uses pydantic schema for type checking and input validation 
-@router.get("/api/v1/transportation-request-cost")
+@TRCE_router.get("/api/v1/transportation-request-cost")
 async def get_transportation_request_cost(
     trce_request: Annotated[TRCERequest, Query()]
 ):
