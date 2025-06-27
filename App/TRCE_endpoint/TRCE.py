@@ -8,7 +8,7 @@ from geopy import distance
 
 # Root URL for the API  (mocked)
 root_url = 'https://apiapi.free.beeceptor.com/api/v1/locations'
-router = APIRouter()
+TRCE_router = APIRouter()
 
 # Uses pydantic schema for type checking and input validation 
 @router.get("/api/v1/transportation-request-cost")

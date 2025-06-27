@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
-from main import app
-from TRCE_endpoint.TRCEFunctions import estimate_transportation_cost
+from ..App.main import app
+from ..App.TRCE_endpoint.TRCEFunctions import estimate_transportation_cost
 import pytest
 
 client = TestClient(app)
